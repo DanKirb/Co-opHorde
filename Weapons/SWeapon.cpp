@@ -291,8 +291,7 @@ void ASWeapon::PickupWeapon(ASCharacterBase* PawnOwner)
 	SetLifeSpan(0);
 }
 
-void ASWeapon::ResetDamage()
-{		
+void ASWeapon::ResetDamage()	
 {	
 	CurrentDamage = OwningPawn->IsPlayerControlled() ? BaseDamage : BaseDamage * AIDamageScaler;
 }
